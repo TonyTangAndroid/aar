@@ -20,6 +20,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'com.github.TonyTangAndroid:tester:1.0.2'
 //    implementation project(':aar')
-    implementation 'com.github.TonyTangAndroid:aar:0.1'
-    implementation 'com.github.TonyTangAndroid:jar:0.2'
+    implementation 'com.github.TonyTangAndroid:aar:1.0.0'
+    implementation 'com.github.TonyTangAndroid:jar:1.0.0'
+    testImplementation 'com.github.TonyTangAndroid:test:1.0.0'
 }
