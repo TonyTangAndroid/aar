@@ -2,11 +2,13 @@ apply plugin: 'com.android.application'
 apply from: '../sign.gradle'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+
     defaultConfig {
         applicationId "demo.tang.tony.com.normal"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
     }
@@ -17,10 +19,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    testImplementation 'com.github.TonyTangAndroid:tester:1.0.2'
-//    implementation project(':aar')
-    implementation 'com.github.TonyTangAndroid:aar:1.0.0'
-    implementation 'com.github.TonyTangAndroid:jar:1.0.0'
-    testImplementation 'com.github.TonyTangAndroid:test:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation project(':aar')
+//    implementation 'com.github.TonyTangAndroid:aar:1.0.0'
+    implementation 'com.github.TonyTangAndroid:jar:1.0.3'
+    testImplementation 'com.github.TonyTangAndroid:test:1.0.2'
 }
